@@ -70,10 +70,29 @@ git push origion   master == to push the changes on the github repo.
       <url_name> <branch_name>
 
 
+// Branches. 
+branches are used so that we do not directly commit into the main branch.
+// because the code might contain some error.
+// main branch contains the final codes.
+
+// we can create a different branch using 
+git branch <branch_name> 
+
+git checkout <branch_name>   === to switch to a different branch .
+// after doing this the head will be pointed to the new branch.
+// Head is basically a pointer which points to the commits in a particular branch.
+// now all the commits you do will be added in the current branch.
 
 
+// if we want to contribute to some other person's repo we need to do 
+// first fork the repo. == > It creates a copy of the project in your github.
+// now you can changes if your copy , whatever you want and then you can ask the owner
+   to accept the changes you made using a PR(pull request);
+// then you need to clone the repo with your username (which you just forked).
+// do 
+ git clone <url>    ==- it will be named as origion by default.
 
-
+ git remote add upstream <url>  === the url of origional repo from where we have forked.
 
 
 
