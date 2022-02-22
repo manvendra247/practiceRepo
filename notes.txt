@@ -57,10 +57,17 @@ git stash clear == to clear the changes which were stashed earlier.
 
 git stash pop === to bring those backstage elements to the stage to make a commit.
 
+git stash show == to see the stash entries.
 
+// to connect a github repo to the current directory. 
+git remote add origion <github_repoUrl>     // here origion denotes the name of the repo
+     // by convention all the repositories in our personal account is named origion.
+    // remote denotes that we are working with Urls
 
+git remote -v === this gives a list of all the urls connected to the current dir.
 
-
+git push origion   master == to push the changes on the github repo.
+      <url_name> <branch_name>
 
 
 
