@@ -1,0 +1,72 @@
+ls -- to list the contents of the folder. 
+cd -- to get into a directory. 
+ls -a == to get the hidden files in the current directory.
+git init  == to initialize a .git folder which stores all the history of the project.
+
+touch {filename} == it is used to create a new file.
+
+git status == it shows the changes made in the current directory.
+// it also shows the untracked file in the directory. 
+// untracked files are the files whose history is not maintained by git.
+
+git add .      or    git add <file name> 
+// used to bring the untracked files on stage to record their history.
+
+git commit -m "message for the commit" // this makes git to click the picture of the
+// files on stage by 'git add' command.
+
+vim == it is used to edit text files quickly in the bash terminal itself.
+
+ // we use insert to insert the text in the file 
+ // :w  == command to save the file.
+ // To save the file without exiting the editor, switch back to normal mode by pressing Esc,
+ // type ':w' and hit Enter. 
+ // ':x' -> to save and exit
+ // press 'Esc', ':q!'  , and then 'Enter'.
+
+cat <file_name> == show the contents of the file in the terminal.
+
+git restore --staged <filename> == this commmand is used to take the out of stage
+                                   // files which were stages using git add
+
+git log  === it shows all the commit history of the current directory.
+
+rm <file_name> == remove files  // rm alone can't remove a directory.
+
+rm command in Linux is used to delete files.
+rm -r command deletes the folder recursively, even the empty folder.
+rm -f command removes ‘Read only File’ without asking.
+rm -rf / : Force deletion of everything in root directory.
+rm -rf * : Force deletion of everything in current directory/working directory.
+rm -rf . : Force deletion of current folder and sub folders.
+
+//when we do 'git log' we get all commits with their hash ID; each commit is built
+on the top of the previous one so we can't delete any commit from the mid.
+
+git reset <hash_code_of_last_commit_you_want_to_keep>  == to unstage the commit 
+        // after a particular commit.
+
+// if we need to store changes but we want to commit them later  altogether we use git stash.
+// first do git add 
+git stash == this brings all the added files to the backstage area.
+                 // which can be commited later on 
+
+vi <filename> == to create and edit a new file in the terminal
+
+git stash clear == to clear the changes which were stashed earlier. 
+
+git stash pop === to bring those backstage elements to the stage to make a commit.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
