@@ -60,13 +60,13 @@ git stash pop === to bring those backstage elements to the stage to make a commi
 git stash show == to see the stash entries.
 
 // to connect a github repo to the current directory. 
-git remote add origion <github_repoUrl>     // here origion denotes the name of the repo
-     // by convention all the repositories in our personal account is named origion.
+git remote add origin <github_repoUrl>     // here origin denotes the name of the repo
+     // by convention all the repositories in our personal account is named origin.
     // remote denotes that we are working with Urls
 
 git remote -v === this gives a list of all the urls connected to the current dir.
 
-git push origion   master == to push the changes on the github repo.
+git push origin   master == to push the changes on the github repo.
       <url_name> <branch_name>
 
 
@@ -90,9 +90,34 @@ git checkout <branch_name>   === to switch to a different branch .
    to accept the changes you made using a PR(pull request);
 // then you need to clone the repo with your username (which you just forked).
 // do 
- git clone <url>    ==- it will be named as origion by default.
+git clone <url>    ==- it will be named as origin by default.
 
- git remote add upstream <url>  === the url of origional repo from where we have forked.
+git remote add upstream <url>  === the url of original repo from where we have forked.
+
+// ``we can use "start <url>" command to open a wepage directly from the terminal.``
+
+''pull request''
+
+we first make changes in our forked branch. then we ask for PR 
+   // if we make a PR using the main branch all the changes pushed after will be 
+  // added in the same PR.
+ // So, avoid commit to main branch . it will add to the same PR. this will be
+    difficult to review.
+// create a new PR for every new feature or bug that you work on.
+// never add many things in just 1 PR.
+// we can add only PR with one branch.
+
+
+//  to update the fork with the upstream changes: -
+git checkout main
+git fetch --all --prune   ==== to fetch the changes in the main branch.
+git reset --hard upstream/main  === reset main branch of origin to the main branch
+                                            of upstream.
+
+
+
+
+
 
 
 
